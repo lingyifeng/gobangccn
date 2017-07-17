@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.lyf.gobangccn.ui.login.LoginActivity">
+
+    <include layout="@layout/layout_title_appbar"/>
+
+    <LinearLayout
+        android:background="@color/text_white"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/common_padding_left_15"
+        android:paddingRight="@dimen/common_padding_left_15">
+
+        <com.jiang.common.widget.EditTextWithDelete
+            android:id="@+id/edit_account"
+            style="@style/edit_input"
+            android:layout_marginBottom="@dimen/common_padding_left_15"
+            android:hint="@string/inputaccount"/>
+
+        <include layout="@layout/layout_divide_line"/>
+
+        <com.jiang.common.widget.EditTextWithDelete
+            android:id="@+id/edit_password"
+            style="@style/edit_input"
+            android:layout_marginBottom="@dimen/common_padding_left_15"
+            android:layout_marginTop="@dimen/common_padding_left_15"
+            android:inputType="textPassword"
+            android:hint="@string/inputpassword"/>
+
+        <include layout="@layout/layout_divide_line"/>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_marginTop="15dp"
+            android:text="@string/login"
+            android:textColor="@color/text_white"
+            android:background="@drawable/bg_common_botton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_regist"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/dot_color"
+            android:text="@string/regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.jiang.common">
+
+    <application>
+        <activity android:name=".imgsel.ImgSelActivity"/>
+        <activity android:name=".photo.ViewPagerActivity"/>
+
+        <meta-data
+                android:name="com.jiang.common.utils.glide.OkHttpGlideModule"
+                android:value="GlideModule"/>
+
+    </application>
+
+</manifest>

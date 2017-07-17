@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GobangIM</string>
+    <string name="gobang">下棋</string>
+    <string name="message">聊天</string>
+    <string name="contacts">联系人</string>
+    <string name="splash_intro">A graduation project for a person in September 2016</string>
+    <string name="splash_intro_chinese">一个毕设给2016年9月的某人</string>
+    <string name="gobangGame">毕设：五子棋游戏</string>
+    <string name="inputaccount">请输入帐号</string>
+    <string name="inputpassword">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="regist">注册</string>
+    <string name="at_your_in_group">%s @ you in group chat</string>
+    <string name="choose_contact">选择联系人</string>
+    <string name="registration_failed_without_permission">Registration failed, without permission!</string>
+    <string name="Registration_failed">注册失败</string>
+</resources>

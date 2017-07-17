@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF6381DB</color>
+    <color name="colorPrimaryDark">#FF3AB4BB</color>
+    <color name="colorAccent">#F1F1F1</color>
+<color name="unchoose">#999999</color>
+    <color name="txt_main_bottom_nor">#D5D7E2</color>
+    <color name="txt_main_bottom_press">#5E80B2</color>
+    <color name="main_backgroud">#EBF3FE</color>
+    <color name="main_shadow">#40000000</color>
+    <color name="dot_color">#6381DB</color>
+    <color name="collect_background">#EDEDED</color>
+    <color name="color_black">#000000</color>
+    <!-- 文字颜色-->
+    <color name="txt_key_color">#333333</color>
+    <color name="txt_content_color">#999999</color>
+    <color name="txt_tips_color">#c8c8c8</color>
+    <color name="txt_content_blue">#829CC2</color>
+    <color name="txt_content_red">#FB3D86</color>
+    <color name="txt_score_bule">#617FD8</color>
+    <color name="txt_change_college">#262728</color>
+    <!--分割线颜色-->
+    <color name="divide_line">#F1F1F1</color>
+    <color name="divide_block">#FAFAFA</color>
+
+    <color name="bg_color_blue">#EBF3FE</color>
+    <color name="ios_style_blue">#258EFE</color>
+    <color name="bg_button_blue">#AEBFEC</color>
+    <color name="bg_button_red">#FB3D86</color>
+    <color name="name_blue">#579CEB</color>
+    <color name="bottom_bg">#aaaaaa</color>
+
+    <color name="busy_indicator">#C0202020</color>
+    <color name="bg_mediacontroller">#99000000</color>
+    <color name="bg_deep_blue">#2F3C65</color>
+    <color name="mediacontroller_bg_pressed">#ff53c1bd</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="text_pitch_on">#38b7ea</color>
+    <color name="text_white">#ffffff</color>
+
+    <color name="btn_blue_normal">#6381DB</color>
+    <color name="btn_blue_press">#4566C8</color>
+    <color name="btn_blue_disenable">#AEBFEC</color>
+
+    <color name="txt_white_press">#7FFFFFFF</color>
+
+    <color name="pg_yellow">#FFC445</color>
+</resources>

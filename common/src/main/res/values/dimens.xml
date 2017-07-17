@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--Appbar value-->
+    <dimen name="appbar_elevation">0dp</dimen>
+    <!-- 文字大小-->
+    <dimen name="txt_key_name_size_16">16sp</dimen>
+    <dimen name="txt_item_name_size_15">15sp</dimen>
+    <dimen name="txt_key_size">14sp</dimen>
+    <dimen name="txt_content_size_13">13sp</dimen>
+    <dimen name="txt_content_size_10">10sp</dimen>
+    <dimen name="txt_tips_size">12sp</dimen>
+    <dimen name="txt_title_size">18sp</dimen>
+
+    <dimen name="btn_width">165dp</dimen>
+    <dimen name="btn_height">44dp</dimen>
+
+    <dimen name="title_height">44dp</dimen>
+
+    <dimen name="common_padding_top_10">10dp</dimen>
+    <dimen name="common_padding_bottom_10">10dp</dimen>
+    <dimen name="common_padding_left_15">15dp</dimen>
+    <dimen name="common_padding_right_15">15dp</dimen>
+
+    <dimen name="img_button_size_22">22dp</dimen>
+    <dimen name="img_avatar_size_20">20dp</dimen>
+    <dimen name="img_avatar_size_30">30dp</dimen>
+    <dimen name="img_avatar_size_35">35dp</dimen>
+    <dimen name="img_avatar_size_40">40dp</dimen>
+    <dimen name="img_avatar_size_50">50dp</dimen>
+    <dimen name="img_avatar_size_70">70dp</dimen>
+    <dimen name="img_avatar_size_100">100dp</dimen>
+
+    <dimen name="img_size_32">32dp</dimen>
+    <dimen name="img_size_64">64dp</dimen>
+
+</resources>
