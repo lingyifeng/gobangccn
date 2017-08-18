@@ -90,7 +90,7 @@ public class ChatRoomAdapter extends ArrayAdapter<EMChatRoom> {
 			});
 		}else if (getItemViewType(position) == 1) {
 			if (convertView == null) {
-				convertView = inflater.inflate(R.layout.em_row_add_group, parent, false);
+				convertView = inflater.inflate(R.layout.em_contact_item, parent, false);
 			}
 			((ImageView) convertView.findViewById(R.id.avatar)).setImageResource(R.mipmap.em_add_public_group);
 			((TextView) convertView.findViewById(R.id.name)).setText(addChatRoomString);

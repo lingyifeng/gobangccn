@@ -2,6 +2,7 @@ package com.lyf.gobangccn.ui.gobang;
 
 import android.view.View;
 
+import com.jiang.common.widget.ToolBarBuilder;
 import com.lyf.gobangccn.R;
 import com.lyf.gobangccn.base.MVPBaseFragment;
 
@@ -17,6 +18,8 @@ public class GobangFragment extends MVPBaseFragment {
 
     @Override
     protected void init(View view) {
+        new ToolBarBuilder(view)
+                .setTitle("下棋");
 
     }
 

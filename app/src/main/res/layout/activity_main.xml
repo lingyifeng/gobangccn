@@ -8,14 +8,33 @@
     android:orientation="vertical"
     tools:context="com.lyf.gobangccn.ui.main.MainActivity">
 
-    <include layout="@layout/layout_title_appbar"/>
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"/>
-<include layout="@layout/layout_divide_block"/>
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <fragment
+            android:id="@+id/frag_gobang"
+            android:name="com.lyf.gobangccn.ui.gobang.GobangFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/frag_gobang">
+        </fragment>
+        <fragment
+            android:id="@+id/frag_message"
+            android:name="com.lyf.gobangccn.ui.message.MessageFrament"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/frag_message">
+        </fragment>
+        <fragment
+            android:id="@+id/frag_contact"
+            android:name="com.lyf.gobangccn.ui.contacts.ContactsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/frag_contacts">
+        </fragment>
+    </FrameLayout>
+
     <com.jiang.common.widget.BottomTabView
         android:id="@+id/tab_main"
         android:layout_width="match_parent"

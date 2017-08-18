@@ -36,6 +36,7 @@ dependencies {
     compile project(':common')
     compile project(':easeui')
     compile 'com.android.support:multidex:'
+
     compile 'com.android.support:appcompat-v7:25.2.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'io.github.openfeign:feign-gson:9.4.0'
@@ -55,8 +56,8 @@ dependencies {
     compile 'com.trello:rxlifecycle-components:0.3.1'
     compile 'com.github.franmontiel:PersistentCookieJar:v1.0.0'
     compile 'com.orhanobut:hawk:2.0.1'
-    testCompile 'junit:junit:4.12'
     compile 'com.parse:parse-android:1.13.1'
+    testCompile 'junit:junit:4.12'
     apt 'com.google.dagger:dagger-compiler:2.8'
     provided 'javax.annotation:javax.annotation-api:1.2'
 }

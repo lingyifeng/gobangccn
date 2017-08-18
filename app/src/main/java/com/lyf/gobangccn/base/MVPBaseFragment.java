@@ -68,6 +68,9 @@ public abstract class MVPBaseFragment<T extends BasePresenter> extends CommonFra
     protected abstract void initInjector();
 
 
+    public void refresh() {
+
+    }
 
     public T getPresenter() {
         return mPresenter;

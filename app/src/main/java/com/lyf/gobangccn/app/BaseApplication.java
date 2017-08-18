@@ -23,6 +23,7 @@ public class BaseApplication extends CommonApplication {
 //        if (!BuildConfig.DEBUG)
         LogUtils.logInit(true);
         DemoHelper.getInstance().init(this);
+
     }
 
     @Override

@@ -29,7 +29,7 @@ public class LoginActivity extends MVPBaseActivity {
     @BindView(R.id.edit_account)
     EditTextWithDelete mEditAccount;
     @BindView(R.id.edit_password)
-    EditTextWithDelete mEditPassword;;
+    EditTextWithDelete mEditPassword;
     @BindView(R.id.tv_regist)
     TextView mTvRegist;
     public static final String KEY_ACCOUNT = "ACCOUNT";
@@ -66,6 +66,7 @@ public class LoginActivity extends MVPBaseActivity {
                 break;
             case R.id.tv_regist:
                 RegisterActivity.startAction(this);
+                finish();
                 break;
         }
     }
@@ -116,7 +117,7 @@ public class LoginActivity extends MVPBaseActivity {
                 }
                 // get user's info (this should be get from App's server or 3rd party service)
                 DemoHelper.getInstance().getUserProfileManager().asyncGetCurrentUserInfo();
-
+                LoginManager.getInstance().setIslogin(true);
                 Intent intent = new Intent(LoginActivity.this,
                         MainActivity.class);
                 startActivity(intent);

@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-<TextView
-    android:text="联系人"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
+<include layout="@layout/layout_title_appbar"/>
+    <com.jiang.common.base.irecyclerview.IRecyclerView
+        app:refreshHeaderLayout="@layout/item_loading_header"
+        app:refreshEnabled="true"
+        android:id="@+id/irv_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.jiang.common.base.irecyclerview.IRecyclerView>
 </LinearLayout>

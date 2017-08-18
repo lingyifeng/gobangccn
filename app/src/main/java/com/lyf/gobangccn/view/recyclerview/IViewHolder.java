@@ -1,6 +1,7 @@
 package com.lyf.gobangccn.view.recyclerview;
 
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.text.Spanned;
 import android.util.SparseArray;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 
 import com.jiang.common.utils.imageloader.ImageLoaderUtils;
 import com.jiang.common.utils.imageloader.PlaceHolder;
+import com.lyf.gobangccn.R;
 
 
 /**
@@ -158,10 +160,10 @@ public abstract class IViewHolder<M extends Object> extends RecyclerView.ViewHol
     }
 
 
-    public IViewHolder<M> setGroupAvatar(int viewId, String path, Integer type, Context context) {
+    public IViewHolder<M> setAvatar(int viewId, String path, Integer type, Context context) {
         ImageView avatar = getView(viewId);
-//        ImageLoaderUtils.displayCircleAvatar(context, avatar, path
-//                , ContextCompat.getDrawable(context, R.mipmap.ic_avatar_group));
+        ImageLoaderUtils.displayCircleAvatar(context, avatar, path
+                , ContextCompat.getDrawable(context, R.mipmap.ic_avatar_man));
         return this;
     }
 

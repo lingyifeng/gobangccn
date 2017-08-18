@@ -31,11 +31,13 @@
             style="@style/edit_input"
             android:layout_marginBottom="@dimen/common_padding_left_15"
             android:layout_marginTop="@dimen/common_padding_left_15"
+            android:inputType="textPassword"
             android:hint="@string/inputpassword"/>
 
         <include layout="@layout/layout_divide_line"/>
         <com.jiang.common.widget.EditTextWithDelete
             android:id="@+id/edit_password_again"
+            android:inputType="textPassword"
             style="@style/edit_input"
             android:layout_marginBottom="@dimen/common_padding_left_15"
             android:layout_marginTop="@dimen/common_padding_left_15"

@@ -1,25 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:id="@+id/viewTabView"
-              android:orientation="vertical"
-              android:gravity="center"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
-    <ImageView
-        android:layout_marginTop="15dp"
-        android:id="@+id/ivIcon"
-        android:layout_weight="1"
-        android:src="@drawable/ic_uncheck"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/viewTabView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-    <TextView
-        android:textSize="13sp"
-        android:id="@+id/tvTitle"
-        android:layout_weight="1"
-        android:gravity="center"
+
+    <LinearLayout
+        android:id="@+id/ll_tab"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="首页"/>
+        android:orientation="vertical">
 
-</LinearLayout>
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_uncheck"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="首页"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_unread"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignRight="@+id/ll_tab"
+        android:layout_gravity="right"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/unreadcircle"
+        android:padding="15dp"
+        android:visibility="gone"/>
+</RelativeLayout>

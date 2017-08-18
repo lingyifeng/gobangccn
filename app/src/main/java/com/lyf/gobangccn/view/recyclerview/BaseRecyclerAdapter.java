@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.lyf.gobangccn.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +19,7 @@ public class BaseRecyclerAdapter<O extends Object> extends RecyclerView.Adapter<
         implements View.OnClickListener, View.OnLongClickListener {
 
 
-//    protected PlaceHolderType status = null;
+    protected PlaceHolderType status = null;
     protected int EMPTY_TYPE = -1;
     protected int maxLimit = -1;
     protected List<O> list = new ArrayList<>();
@@ -70,19 +72,19 @@ public class BaseRecyclerAdapter<O extends Object> extends RecyclerView.Adapter<
 
     @Override
     public IViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-//        if (EMPTY_TYPE == viewType) {
-//            View v = mLayoutInflater.inflate(R.layout.layout_placeholder, parent, false);
-//            return new EmptyHolder(v);
-//        }
+        if (EMPTY_TYPE == viewType) {
+            View v = mLayoutInflater.inflate(R.layout.layout_placeholder, parent, false);
+            return new EmptyHolder(v);
+        }
         return null;
     }
 
     @Override
     public void onBindViewHolder(IViewHolder holder, int position) {
         if (list.size() <= 0) {
-//            if (status != null) {
-//                ((EmptyHolder) holder).setErrorType(status);
-//            }
+            if (status != null) {
+                ((EmptyHolder) holder).setErrorType(status);
+            }
         } else {
             if (holderList.size() > position) {
                 holderList.set(position, holder);
@@ -112,10 +114,10 @@ public class BaseRecyclerAdapter<O extends Object> extends RecyclerView.Adapter<
         return count;
     }
 
-//    public void setErrorType(PlaceHolderType status) {
-//        this.status = status;
-//        notifyDataSetChanged();
-//    }
+    public void setErrorType(PlaceHolderType status) {
+        this.status = status;
+        notifyDataSetChanged();
+    }
 
     public void setMaxLimit(int count) {
         maxLimit = count;

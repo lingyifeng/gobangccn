@@ -13,6 +13,7 @@ import com.jiang.common.widget.ToolBarBuilder;
 import com.lyf.gobangccn.R;
 import com.lyf.gobangccn.base.MVPBaseActivity;
 import com.lyf.gobangccn.easemob.DemoHelper;
+import com.lyf.gobangccn.ui.login.LoginActivity;
 import com.lyf.gobangccn.util.ToastUtil;
 
 import butterknife.BindView;
@@ -97,6 +98,8 @@ public class RegisterActivity extends MVPBaseActivity {
                             if (aBoolean) {
                                 ToastUtil.showShort("注册成功");
                                 DemoHelper.getInstance().setCurrentUserName(account);
+                                startActivity(LoginActivity.class);
+                                finish();
                             }
                         }, throwable -> {
                             stopProgressDialog();
