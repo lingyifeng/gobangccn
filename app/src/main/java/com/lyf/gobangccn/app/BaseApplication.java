@@ -7,6 +7,7 @@ import android.content.res.Resources;
 import android.os.Build;
 import android.support.multidex.MultiDex;
 
+import com.baidu.mapapi.SDKInitializer;
 import com.jiang.common.base.CommonApplication;
 import com.jiang.common.utils.LogUtils;
 import com.lyf.gobangccn.easemob.DemoHelper;
@@ -23,7 +24,7 @@ public class BaseApplication extends CommonApplication {
 //        if (!BuildConfig.DEBUG)
         LogUtils.logInit(true);
         DemoHelper.getInstance().init(this);
-
+        SDKInitializer.initialize(this);
     }
 
     @Override

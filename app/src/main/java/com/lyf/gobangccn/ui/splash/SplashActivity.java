@@ -41,7 +41,7 @@ public class SplashActivity extends MVPBaseActivity {
     protected void init() {
         AlphaAnimation alphaAnimation = new AlphaAnimation(0.0f, 1.0f);
         //动画执行的时间
-        alphaAnimation.setDuration(2000);
+        alphaAnimation.setDuration(1000);
         mLlSplash.setAnimation(alphaAnimation);
     }
 
@@ -115,7 +115,7 @@ public class SplashActivity extends MVPBaseActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 3000);
+        }, 1000);
     }
 
     @Override

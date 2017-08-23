@@ -117,11 +117,11 @@ public class MainActivity extends MVPBaseActivity {
         mFragments.add((GobangFragment) getSupportFragmentManager().findFragmentById(R.id.frag_gobang));
         mFragments.add((MessageFrament) getSupportFragmentManager().findFragmentById(R.id.frag_message));
         mFragments.add((ContactsFragment) getSupportFragmentManager().findFragmentById(R.id.frag_contact));
-       changePosition(0);
+        changePosition(0);
         mTabMain.setOnTabItemSelectListener(new BottomTabView.OnTabItemSelectListener() {
             @Override
             public void onTabItemSelect(int position) {
-                currentPosition=position;
+                currentPosition = position;
                 changePosition(position);
 
             }
